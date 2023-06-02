@@ -6,6 +6,8 @@ export default function ItemButton() {
   const [isPlusHovered, setIsPlusHovered] = useState(false)
   let [quantity, setQuantity] = useState(0)
 
+  // props.handleItemPrice(quantity)
+
   function handleMouseMinusEnter() {
     setIsMinusHovered(true)
   }
