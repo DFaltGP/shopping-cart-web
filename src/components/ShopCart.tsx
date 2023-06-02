@@ -26,10 +26,10 @@ export default function Shopbar() {
   }
 
   return (
-    <div className="flex h-screen w-full flex-col items-center justify-between transition-all">
+    <div className="items-center flex h-screen w-full flex-col justify-between transition-all">
       {isBarOpen ? (
         <>
-          <header className="flex h-14 w-full select-none items-center justify-between border-2 border-l-0 border-r-0 border-t-0 border-b-[#3F3F46] bg-[#18181B] p-8">
+          <header className="items-center flex h-14 w-full select-none justify-between border-2 border-l-0 border-r-0 border-t-0 border-b-[#3F3F46] bg-[#18181B] p-8">
             <p className="leading-loose">
               Seu carrinho tem <strong>5 itens</strong>
             </p>
@@ -42,7 +42,7 @@ export default function Shopbar() {
             </button>
           </header>
 
-          <section className="flex w-full  flex-grow flex-col items-center justify-start overflow-y-scroll bg-[#18181B]">
+          <section className="items-center flex  w-full flex-grow flex-col justify-start overflow-y-scroll bg-[#18181B]">
             <ShopItem
               imageUrl="/images/product-image-cadeira.jpg"
               description="Cadeira Gamer  RGB - Preta com Iluminação (Led)"
@@ -75,15 +75,15 @@ export default function Shopbar() {
             />
           </section>
 
-          <section className="flex w-full flex-col items-center justify-center gap-6 border-2 border-b-0 border-l-0 border-r-0 border-t-[#3F3F46] bg-[#18181B] p-8">
-            <div className="flex w-full items-center justify-between text-2xl">
+          <section className="items-center flex w-full flex-col justify-center gap-6 border-2 border-b-0 border-l-0 border-r-0 border-t-[#3F3F46] bg-[#18181B] p-8">
+            <div className="items-center flex w-full justify-between text-2xl">
               <p className="select-none leading-relaxed">Total:</p>
               <p className="text=[#F9FAFB] font-semibold">R$ 10.799,99</p>
             </div>
             <button
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="flex items-center justify-center gap-2 self-end text-[#A855F7] transition-all hover:text-[#C084FC]"
+              className="items-center flex justify-center gap-2 self-end text-[#A855F7] transition-all hover:text-[#C084FC]"
             >
               {isHovered ? (
                 <Image
@@ -109,7 +109,7 @@ export default function Shopbar() {
                   </p>
                 </div>
               ) : (
-                <div className="flex select-none items-center justify-between border border-l-0 border-r-0 border-t-0 border-b-[#A855F7]">
+                <div className="items-center flex select-none justify-between border border-l-0 border-r-0 border-t-0 border-b-[#A855F7]">
                   <input
                     type="text"
                     className="bg-[#18181B] text-[#C084FC] outline-none"
@@ -130,17 +130,17 @@ export default function Shopbar() {
           </section>
         </>
       ) : (
-        <div className="flex h-screen w-full select-none flex-col items-center justify-center gap-8 border-2 border-b-0 border-r-0 border-t-0 border-l-gray-700">
-          <p className="flex w-10/12 items-center justify-center gap-2 rounded-md text-2xl">
+        <div className="items-center flex h-screen w-full select-none flex-col justify-center gap-8 border-2 border-b-0 border-r-0 border-t-0 border-l-gray-700">
+          <p className="items-center flex w-10/12 justify-center gap-2 rounded-md text-2xl">
             Já vai? Ainda nem chegamos na melhor parte.
           </p>
-          <p className="flex w-10/12 items-center justify-center gap-2 rounded-md">
+          <p className="items-center flex w-10/12 justify-center gap-2 rounded-md">
             Experimente agora os nossos cupons de desconto, não irá se
             arrepender...
           </p>
           <button
             onClick={toggleShopBar}
-            className="flex w-10/12 items-center justify-center gap-2 rounded-md bg-[#9333EA] p-4 font-semibold uppercase transition-all hover:bg-[#A855F7]"
+            className="items-center flex w-10/12 justify-center gap-2 rounded-md bg-[#9333EA] p-4 font-semibold uppercase transition-all hover:bg-[#A855F7]"
           >
             {' '}
             <p>Continuar comprando</p>

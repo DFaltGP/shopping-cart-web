@@ -18,7 +18,7 @@ export default function ShopCard() {
       </div>
       <div className="flex w-full flex-wrap items-start justify-between gap-4  text-white">
         <p className="font-semibold">R$ 19,90</p>
-        <div className="items-center flex flex-col flex-wrap gap-4  text-white">
+        <div className="items-center flex flex-wrap gap-4  text-white">
           <button className="w-32 rounded-md bg-zinc-950 p-2 text-white">
             ADICIONAR
           </button>
