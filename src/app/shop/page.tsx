@@ -8,7 +8,7 @@ export default function Shop() {
         <nav className="sticky top-0 flex h-14 items-center border border-l-0 border-r-0 border-t-0 border-b-[#A1A1AA] bg-zinc-950 p-8">
           <label htmlFor="select">Ordenar por</label>
         </nav>
-        <div className=" flex flex-wrap items-center justify-evenly gap-4 bg-zinc-950">
+        <div className="flex flex-wrap items-center justify-evenly gap-4  bg-emerald-700">
           <ShopCard />
           <ShopCard />
           <ShopCard />
