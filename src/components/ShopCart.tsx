@@ -130,7 +130,7 @@ export default function Shopbar() {
           </section>
         </>
       ) : (
-        <div className="items-center flex h-screen w-full select-none flex-col justify-center gap-8 border-2 border-b-0 border-r-0 border-t-0 border-l-gray-700">
+        <div className="items-center flex h-screen w-full select-none flex-col justify-center bg-[#18181a] gap-8 border-2 border-b-0 border-r-0 border-t-0 border-l-gray-700">
           <p className="items-center flex w-10/12 justify-center gap-2 rounded-md text-2xl">
             Já vai? Ainda nem chegamos na melhor parte.
           </p>

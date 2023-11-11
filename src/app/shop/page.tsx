@@ -4,11 +4,11 @@ import ShopCart from '@/components/ShopCart'
 export default function Shop() {
   return (
     <div className="grid h-screen grid-cols-4">
-      <div className="col-span-3 flex h-full flex-col gap-8 overflow-y-scroll bg-zinc-950 ">
-        <nav className="sticky top-0 flex h-14 items-center border border-l-0 border-r-0 border-t-0 border-b-[#A1A1AA] bg-zinc-950 p-8">
+      <div className="col-span-3 flex h-full flex-col overflow-y-scroll bg-neutral-200 ">
+        <nav className="sticky top-0 flex h-14 items-center shadow-md bg-[#18181a] p-8">
           <label htmlFor="select">Ordenar por</label>
         </nav>
-        <div className="flex flex-wrap items-center justify-evenly gap-4  bg-emerald-700">
+        <div className="flex flex-wrap items-center justify-evenly gap-4 mt-4 mb-4 bg-neutral-200">
           <ShopCard />
           <ShopCard />
           <ShopCard />
