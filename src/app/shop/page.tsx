@@ -1,4 +1,4 @@
-import ShopCard from '@/components/ShopCard'
+import { ShopCard } from '@/components/ShopCard'
 import ShopCart from '@/components/ShopCart'
 
 export default function Shop() {

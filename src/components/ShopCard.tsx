@@ -1,6 +1,18 @@
 import Image from 'next/image'
+import { useState } from 'react'
 
-export default function ShopCard() {
+export const ShopCard: React.FC = () => {
+
+  interface Item {
+    id: string;
+    name: string;
+    description: string;
+    imgSrc: string;
+    price: string
+  }
+
+  const [itemInCard, setItemInCard] = useState<Item[]>([])
+
   return (
     <div className="items-center flex w-3/12 flex-col justify-between gap-4 rounded-md bg-[#18181b] p-4">
       <div className="flex w-full flex-col -items-center justify-center gap-4">

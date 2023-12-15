@@ -14,11 +14,6 @@ type Item = {
 export default function ShopItem(props: Item) {
   const [imageSrc, setImageSrc] = useState('')
   const [description, setDescription] = useState(props.description)
-  // const [itemPrice, setItemPrice] = useState(0)
-
-  // const handleItemPrice = (spend: number) => {
-  //   setItemPrice(spend)
-  // }
 
   useEffect(() => {
     if (props.imageUrl) {
@@ -31,11 +26,6 @@ export default function ShopItem(props: Item) {
       setDescription(props.description.substring(0, charLimit) + '...')
     }
   }, [props.imageUrl, props.description])
-
-  // function convertPrice(price: string) {
-  //   const newPrice = price.replace(',', '.')
-  //   return newPrice
-  // }
 
   return (
     <div className="items-center flex w-full justify-between gap-4 p-8">
@@ -60,4 +50,3 @@ export default function ShopItem(props: Item) {
     </div>
   )
 }
-// handleItemPrice={handleItemPrice}
